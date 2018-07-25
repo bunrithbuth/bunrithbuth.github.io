@@ -11,17 +11,20 @@ header {
 }
 
 .headercontent {
-    width: 960px;
+    max-width: 980px;
     height: 100%;
     position: relative;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .headerlogo {
    width: 300px;
    height: 100%;
    background-color: #4aaaa5;
-   display: inline-block;
 }
 
 .headerlogo:hover { 
@@ -29,10 +32,8 @@ header {
 }
 
 .headerRightNav {
-    right: 0px;
-    display: inline-block;
-    position: absolute;
-    padding-top: 25px;
+    display: flex;
+    align-items: center;
 }
 
 .headerRightNav a {
@@ -82,7 +83,7 @@ body {
 }
 
 #body {
-    width: 960px;
+    max-width: 960px;
     min-height: 400px;
     position: relative;
     top: 30px;
@@ -183,4 +184,25 @@ body {
 
 .projectname:hover { 
     background-color: pink; 
+}
+
+@media screen and (max-width: 600px) {
+    .headercontent, .headerlogo, .headerRightNav {
+        display: block;
+        width: 100%;
+    }
+
+    .headercontent {
+    padding-left: 0px;
+    padding-right: 0px;
+    }
+    .headerRightNav {
+        margin: auto;
+        text-align: center;
+        background-color: white;
+    }
+    #body {
+        top: 50px;
+    }
+    
 }
