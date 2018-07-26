@@ -55,7 +55,7 @@ header {
 
 /** footer **/
 footer {
-    position:fixed;
+    position: fixed;
     bottom:0;
     width:100%;
     height: 60px;
@@ -69,21 +69,19 @@ footer {
 }
 
 /** content **/
-#mainFrame {
-    background-image: url("../images/random_grey_variations.png");
-    width: 100%;
-    height: 110vh;   
-}
-
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     font-size: 18px;
     margin: 0px;
 }
 
+#mainFrame {
+    background-image: url("../images/random_grey_variations.png");
+    min-height: 110vh;
+}
+
 #body {
     max-width: 960px;
-    min-height: 400px;
     position: relative;
     top: 30px;
     background-color: whitesmoke;
