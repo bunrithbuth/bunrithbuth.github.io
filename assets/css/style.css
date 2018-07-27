@@ -112,6 +112,10 @@ body {
     margin-bottom: 30px;
 }
 
+.buttonlink {
+    text-decoration: none !important;
+}
+
 .buttonimg {
     width: 18px;
     height: 18px;
