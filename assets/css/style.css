@@ -77,6 +77,8 @@ body {
 
 #mainFrame {
     background-image: url("../images/random_grey_variations.png");
+    /** for footer **/
+    margin-bottom: 60px;
     min-height: 110vh;
 }
 
